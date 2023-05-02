@@ -20,7 +20,8 @@ let firstName = 'Nataliia'
 let middleName = 'Ivanivna'
 let lastName = 'Shchur'
 
-console.log(firstName, middleName, lastName);
+let user =`${firstName} ${middleName} ${lastName}`;
+console.log(user);
 
 // task - 3
 let a = 100;
@@ -33,12 +34,9 @@ console.log(typeof c, c);
 
 // task - 4
 let userFirstName = prompt('Enter your first name:')
-console.log(userFirstName);
-
 let userMiddleName = prompt('Enter your middle name:')
-console.log(userMiddleName);
+let userAge = +prompt('Enter your age:')
 
-let userLastName = prompt('Enter your last name:')
-console.log(userLastName);
+console.log(`${userFirstName} ${userMiddleName} ${userAge}`);
 
 
