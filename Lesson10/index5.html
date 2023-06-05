@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при
+  // натисканні на кнопку зникав елемент з id="text".
+
+  const p = document.createElement('p');
+  const btn = document.createElement('button');
+
+  p.innerText = 'Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".';
+btn.innerText = 'Click';
+
+btn.onclick = () => p.style.display = 'none';
+
+  document.body.append(p, btn);
+
+
+
+</script>
+
+</body>
+</html>
