@@ -24,11 +24,14 @@ fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
             fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
             .then(value => value.json())
             .then(posts => {
+                const postMainDiv = document.createElement('div');
+                postMainDiv.classList.add('postMainDiv');
+                document.body.appendChild(postMainDiv);
                 for (const post of posts) {
                     const postDiv = document.createElement("div");
                     postDiv.classList.add('title')
                     postDiv.innerText = `Post title: ${post.title}`
-                    document.body.appendChild(postDiv);
+                    postMainDiv.appendChild(postDiv);
                     const postButton = document.createElement('button');
                     postButton.innerText = 'More';
                     postButton.classList.add('more');

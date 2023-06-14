@@ -7,10 +7,11 @@
 /*//*/
 
 .wrap{
-    width: 700px;
+    width: 1800px;
     background-color: rgb(236,242,255);
     margin: 10px;
     padding: 10px;
+    font-size: 18px;
 }
 
 button{
@@ -20,24 +21,31 @@ button{
     box-shadow: 3px 3px 2px 1px rgb(0,0,0, 0.5);
     border: none;
     border-radius: 15px;
-    margin: 10px 30px;
+    margin: 10px 70px;
     font-size: 15px;
     font-weight: 600;
 }
 
 button:hover{
     background-color: rgb(227,223,253);
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.postMainDiv{
+    width: 1900px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .title{
-    width: 715px;
+    width: 900px;
     background-color: rgb(236,242,255);
     margin: 5px;
     padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
 }
 
 .more{
