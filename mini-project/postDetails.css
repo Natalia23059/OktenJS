@@ -3,7 +3,7 @@
 /*//         Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)*/
 /*//*/
 .details, .comment{
-    width: 1120px;
+    width: 1800px;
     background-color: rgb(236,242,255);
     margin: 10px;
     padding: 10px;
@@ -12,13 +12,14 @@
 
 .box{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 1400px;
+    width: 1800px;
     height: auto;
     font-size: 18px;
 }
 
 .comment{
-    width: 250px;
+    width: 22%;
 }
 
